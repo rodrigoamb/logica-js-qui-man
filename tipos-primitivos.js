@@ -96,7 +96,7 @@ let lapiseira = {
   cor: "azul",
 };
 
-console.log(lapiseira);
+console.log();
 console.log(lapiseira.marca);
 
 let tenis = {
