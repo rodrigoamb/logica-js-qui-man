@@ -77,3 +77,47 @@ console.log(minhaCompra);
 
 somar(20, 30);
 somar(220, 40);
+
+function diminuir(numero1, numero2) {
+  console.log("Acessei minha variavel no escopo global", minhaCompra);
+  const result = numero1 - numero2;
+  return result;
+}
+
+const result = "Esse é meu result no escopo global";
+console.log(result);
+
+function multiplicar(numero1, numero2) {
+  const result = numero1 * numero2;
+  return result;
+}
+
+function dividir(numero1, numero2) {
+  const result = numero1 / numero2;
+  return result;
+}
+
+const resultadoDiminuir = diminuir(10, 5);
+const resultadoMultiplicar = multiplicar(3, 4);
+const resultadoDividir = dividir(10, 2.5);
+
+console.log(resultadoDiminuir);
+console.log(resultadoMultiplicar);
+console.log(resultadoDividir);
+
+// funcao anonima (2a forma)
+
+const saudacao = function (nome, idade) {
+  console.log(`Olá meu nome é ${nome} e tenho ${idade} anos.`);
+  return 100;
+};
+
+saudacao("Rodrigo", 35);
+
+// arrow functions (3a forma)
+
+const mensagemTenis = (marca) => {
+  console.log(`Comprei um tenis ${marca}`);
+};
+
+mensagemTenis("Adidas");
