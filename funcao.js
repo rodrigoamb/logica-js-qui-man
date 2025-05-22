@@ -190,3 +190,18 @@ console.log(meuDado);
 // A função deve receber um valor em Celsius.
 // Fórmula: (celsius * 9/5) + 32
 // Mostre no console a temperatura convertida, EXECUTANDO a função.
+
+//Atividade 4:
+// Crie um objeto chamado loja que possua:
+// - Uma propriedade nome com o nome da loja.
+// - Uma propriedade produtos que é um array com 3 nomes de produtos (ex.: ["camisa", "calça", "sapato"]).
+// - Um método chamado listarProdutos que exibe no console todos os produtos da loja, um em cada linha.
+// Execute o método para mostrar os produtos no console.
+
+//atividade 5:
+// Crie um objeto chamado carro que possua:
+// - Uma propriedade ligado, que começa com valor false.
+// - Um método ligar que altera ligado para true e exibe no console "O carro está ligado".
+// - Um método desligar que altera ligado para false e exibe no console "O carro está desligado".
+// - Um método status que mostra no console "Ligado" ou "Desligado" dependendo do estado atual do carro.
+// Execute os métodos na ordem: status, ligar, status, desligar, status.
