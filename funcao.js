@@ -160,24 +160,24 @@
 
 // console.log("Rodrigo Medeiros");
 
-const pessoa = {
-  nome: "Rodrigo",
-  idade: 35,
-  profissao: ["programador", "Professor"],
-  estaSolteiro: true,
-  altura: 1.87,
-  peso: 94,
+// const pessoa = {
+//   nome: "Rodrigo",
+//   idade: 35,
+//   profissao: ["programador", "Professor"],
+//   estaSolteiro: true,
+//   altura: 1.87,
+//   peso: 94,
 
-  saudacao() {
-    const algumaCoisa = "oláá";
+//   saudacao() {
+//     const algumaCoisa = "oláá";
 
-    return algumaCoisa;
-  },
-};
+//     return algumaCoisa;
+//   },
+// };
 
-const meuDado = pessoa.saudacao();
+// const meuDado = pessoa.saudacao();
 
-console.log(meuDado);
+// console.log(meuDado);
 
 //atividade 1: crie uma funcao que calcula a área de um triangulo que recebe uma base e uma altura, mostre o resultado no console EXECUTANDO a funcao.
 
@@ -205,3 +205,28 @@ console.log(meuDado);
 // - Um método desligar que altera ligado para false e exibe no console "O carro está desligado".
 // - Um método status que mostra no console "Ligado" ou "Desligado" dependendo do estado atual do carro.
 // Execute os métodos na ordem: status, ligar, status, desligar, status.
+
+const carro = {
+  marca: "Ferrari",
+  ligado: false,
+
+  ligar() {
+    this.ligado = true;
+    console.log("O carro está ligado");
+  },
+
+  desligar() {
+    this.ligado = false;
+    console.log("O carro está desligado");
+  },
+
+  status() {
+    console.log("O carro está ligado?", this.ligado);
+  },
+};
+
+carro.ligar();
+
+carro.desligar();
+
+console.log(carro.status());
