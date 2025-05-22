@@ -179,4 +179,14 @@ const meuDado = pessoa.saudacao();
 
 console.log(meuDado);
 
-// crie uma funcao que calcula a área de um triangulo que recebe uma base e uma altura, mostre o resultado no console EXECUTANDO a funcao.
+//atividade 1: crie uma funcao que calcula a área de um triangulo que recebe uma base e uma altura, mostre o resultado no console EXECUTANDO a funcao.
+
+////Atividade 2: Crie uma função que calcule o IMC (Índice de Massa Corporal).
+// A função deve receber dois parâmetros: peso e altura.
+// Fórmula do IMC: peso / (altura * altura)
+// Mostre no console o IMC calculado, EXECUTANDO a função.
+
+//Atividade 3: Crie uma função que converta uma temperatura de Celsius para Fahrenheit.
+// A função deve receber um valor em Celsius.
+// Fórmula: (celsius * 9/5) + 32
+// Mostre no console a temperatura convertida, EXECUTANDO a função.
