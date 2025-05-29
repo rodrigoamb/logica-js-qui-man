@@ -67,7 +67,7 @@ calculoSimples("exponencial", 30, 3);
 // 	•	"kelvin" → quando o valor estiver em Kelvin.
 // 	2.	valor: um número que representa a temperatura.
 
-// A função deve utilizar uma estrutura switch case para verificar qual tipo de temperatura foi informada, e com base nisso:
+// A função deve utilizar uma estrutura if/else para verificar qual tipo de temperatura foi informada, e com base nisso:
 // 	•	Se for “celsius”, deve converter para fahrenheit e kelvin.
 // 	•	Se for “fahrenheit”, deve converter para celsius e kelvin.
 // 	•	Se for “kelvin”, deve converter para celsius e fahrenheit.
