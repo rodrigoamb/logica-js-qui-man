@@ -73,8 +73,37 @@ calculoSimples("exponencial", 30, 3);
 // 	•	Se for “kelvin”, deve converter para celsius e fahrenheit.
 // 	•	Se for um tipo inválido, exibir uma mensagem informando o erro.
 
-// ✅ Fórmulas de conversão:
+// Fórmulas de conversão:
 // 	•	Celsius → Fahrenheit: (C * 9/5) + 32
 // 	•	Celsius → Kelvin: C + 273.15
 // 	•	Fahrenheit → Celsius: (F - 32) * 5/9
 // 	•	Kelvin → Celsius: K - 273.15
+
+function converterTemperatura(tipo, valor) {
+  if (tipo == "celsius") {
+    const tempEmFahrenheit = valor * (9 / 5) + 32;
+    const tempEmKelvin = valor + 273.15;
+
+    console.log("temperatura em fahrenheit:", tempEmFahrenheit.toFixed(2));
+    console.log("temperatura em kelvin:", tempEmKelvin.toFixed(2));
+  } else if (tipo == "fahrenheit") {
+    const tempEmCelsius = ((valor - 32) * 5) / 9;
+    const tempEmKelvin = tempEmCelsius + 273.15;
+
+    console.log("temperatura em celsius:", tempEmCelsius.toFixed(2));
+    console.log("temperatura em kelvin:", tempEmKelvin.toFixed(2));
+  } else if (tipo == "kelvin") {
+    const tempEmCelsius = valor - 273.15;
+    const tempEmFahrenheit = tempEmCelsius * (9 / 5) + 32;
+
+    console.log("temperatura em celsius:", tempEmCelsius.toFixed(2));
+    console.log("temperatura em fahrenheit:", tempEmFahrenheit.toFixed(2));
+  } else {
+    console.log("Tipo inválido, digite o tipo de temperatura existente");
+  }
+}
+
+converterTemperatura("celsius", 45);
+converterTemperatura("fahrenheit", 120);
+converterTemperatura("kelvin", 460);
+converterTemperatura("nhenhe", 36);
