@@ -78,3 +78,45 @@ let numerosPares = listNumbers.filter((item) => {
 });
 
 console.log(numerosPares);
+
+//forEach - itera sobre cada elemento do array
+
+let lista1 = ["Arroz", "Feijao", "macarrão"];
+
+lista1.forEach((item) => {
+  console.log(item);
+});
+
+//find() = retorna o primeiro elemento que satifaz a uma condição
+
+let numeros1 = [10, 20, 30, 40, 50];
+
+let encontrado = numeros1.find((item) => {
+  return item > 30;
+});
+
+console.log(encontrado);
+
+//some() - Verifica se algum elemento de array atende a uma condição
+
+let numeros2 = [10, 20, 30, 40];
+
+console.log(
+  numeros2.some((item) => {
+    return item > 20;
+  })
+);
+
+//every() - Verifica se todos os elementos atendem a uma condição
+
+console.log(
+  numeros2.every((item) => {
+    return item > 20;
+  })
+);
+
+//includes() = Verifica se um elemento existe no array, retornando true ou false
+
+const letras1 = ["a", "b", "c", "d"];
+
+console.log(letras1.includes("x"));
